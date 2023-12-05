@@ -1,0 +1,8 @@
+
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^payment-success/?$ success.php [NC,L]
+  RewriteRule ^upgrade/?$ upgrade.php [NC,L] 
+
+</IfModule>
