@@ -330,7 +330,7 @@
             <div class="row">
                 <p>OUR SOFTWARE</p>
                 <p>ATIZ SOFTWARE STORE</p>
-                <div class="col-lg-4 col-md-6 software-block">
+                <div class="col-lg-4 col-md-6 software-block" onclick="location.href = 'https://www.atiz.com/bookdrive-capture/'">
                     <img src="images/software-1.png" alt="">
                     <div class="software-topic">
                         <p>BookDrive Capture</p>
@@ -338,14 +338,14 @@
                     </div>
                     <p>The one software to control all the cameras Press one button to scan both left and right pages and have the images rendered on screen immediately. You can capture as fast as 800 pages per hour.</p>
                 </div>
-                <div class="col-lg-4 col-md-6 software-block">
+                <div class="col-lg-4 col-md-6 software-block" onclick="location.href = 'https://www.atiz.com/capture-sony/'">
                     <img src="images/software-2.png" alt="">
                     <div class="software-topic">
                         <p>Atiz Capture for Sony</p>
                     </div>
                     <p style="margin-top: 10px;">New software from Atiz enabling you to unlock the full power of Sony Alpha cameras like A7R IV for digitization on the BookDrive that you already own.</p>
                 </div>
-                <div class="col-lg-4 col-md-6 software-block">
+                <div class="col-lg-4 col-md-6 software-block" onclick="location.href = 'https://www.atiz.com/bookdrive-editor-pro/'">
                     <img src="images/software-3.png" alt="">
                     <div class="software-topic">
                         <p>BookDrive Editor Pro 10</p>
