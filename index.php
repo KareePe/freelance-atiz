@@ -78,7 +78,7 @@
                                         </div>
                                         <p class="book-drive-content-desc">Top of the line, A2</p>
                                         <p class="book-drive-content-content">Mark 2, a successor to the BookDrive Pro, our best selling scanner.Mark 2 has improved upon BookDrive Pro in so important ways based on actual feedback of the prousers that make you want to upgrade.</p>
-                                        <a class="book-drive-content-href" href="#">view detail</a>
+                                        <a class="book-drive-content-href" href="https://mark2.atiz.com/">view detail</a>
                                     </div>
                                 </div>
                             </div>
@@ -104,7 +104,7 @@
                                         <p class="book-drive-content-desc">Mid-range, A3New</p>
                                         <p class="book-drive-content-content">Mark 2, a successor to the BookDrive Pro, our best selling scanner.Mark 2 has improved upon BookDrive Pro in so important ways based on actual feedback of the prousers that make you want to upgrade.</p>
                                         <br>
-                                        <a class="book-drive-content-href" href="#">view detail</a>
+                                        <a class="book-drive-content-href" href="https://mark2lite.atiz.com/">view detail</a>
                                     </div>
                                 </div>
                             </div>
@@ -128,7 +128,7 @@
                                         </div>
                                         <p class="book-drive-content-desc">Affordable Legal Size</p>
                                         <p class="book-drive-content-content">BookDrive Mini is the most affordable and easiest to use model of the successful BookDrive line of scanners. BookDrive solution solves typical problems found in overhead scanners: page curvature, damage to book spine, and low productivity.</p>
-                                        <a class="book-drive-content-href" href="#">view detail</a>
+                                        <a class="book-drive-content-href" href="https://mini2.atiz.com/">view detail</a>
                                     </div>
                                 </div>
                             </div>
@@ -151,7 +151,7 @@
                                         </div>
                                         <p class="book-drive-content-desc">Flat-plane A2</p>
                                         <p class="book-drive-content-content">More than books, the versatile BookDrive N is great for scanning bound and unbound materials such as artwork, maps, photos, journals, newspapers or pretty much anything.</p>
-                                        <a class="book-drive-content-href" href="#">view detail</a>
+                                        <a class="book-drive-content-href" href="https://n.atiz.com/">view detail</a>
                                     </div>
                                 </div>
                             </div>

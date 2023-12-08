@@ -15,14 +15,14 @@ $pageId = "b01";
     <meta name="author" content="">
     <title>Atiz - Software Store</title>
     <link href="//www.atiz.com/atiz1.ico" rel="shortcut icon" />
-    <link href="css/aos.css" rel="stylesheet">
+    <link href="../css/aos.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/store-style7.css?v=270722.1" rel="stylesheet">
-    <link href="core_css/aos.css" rel="stylesheet">
-    <link href="core_css/slide.min.css" rel="stylesheet">
-    <link href="core_css/home-new.css" rel="stylesheet">
-    <link href="core_css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="core_css/global-new.css" rel="stylesheet">
+    <link href="../core_css/aos.css" rel="stylesheet">
+    <link href="../core_css/slide.min.css" rel="stylesheet">
+    <link href="../core_css/home-new.css" rel="stylesheet">
+    <link href="../core_css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../core_css/global-new.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap" rel="stylesheet">
@@ -49,21 +49,21 @@ $pageId = "b01";
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <div class="software-img-block software-img-block-1">
+                                    <div class="software-img-block software-img-block-1" onclick="location.href = 'https://www.atiz.com/bookdrive-capture/'">
                                         <img src="images/software-store-1.png" alt="">
                                         <h2>BookDrive Capture 10</h2>
                                         <img src="images/software-camera-1.png" alt="">
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="software-img-block software-img-block-2">
+                                    <div class="software-img-block software-img-block-2" onclick="location.href = 'https://www.atiz.com/capture-sony/'">
                                         <img src="images/software-store-2.png" alt="">
                                         <h2>BookDrive Capture 10</h2>
                                         <img src="images/software-camera-2.png" alt="">
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="software-img-block software-img-block-3">
+                                    <div class="software-img-block software-img-block-3" onclick="location.href = 'https://www.atiz.com/bookdrive-editor-pro/'">
                                         <img src="images/software-store-3.png" alt="">
                                         <h2>BookDrive Capture 10</h2>
                                         <img src="images/software-camera-3.png" alt="">
@@ -132,12 +132,12 @@ $pageId = "b01";
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-6 col-md-12">
-                                        <div class="block-outline">
+                                        <div class="block-outline"  onclick="location.href = 'https://www.paypal.com/webapps/shoppingcart?mfid=1701144061717_f8573671df95e&flowlogging_id=f8573671df95e#/checkout/shoppingCart'">
                                             <p>Upgrade<br>$1,499</p>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-12">
-                                        <div class="block-fill">
+                                        <div class="block-fill"  onclick="location.href = 'https://www.paypal.com/webapps/shoppingcart?mfid=1701144084668_f226710b6b739&flowlogging_id=f226710b6b739#/checkout/shoppingCart'">
                                             <p>New Licesnse<br>$2,399</p>
                                         </div>
                                     </div>
@@ -210,7 +210,7 @@ $pageId = "b01";
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-12">
-                                        <div class="block-fill">
+                                        <div class="block-fill" onclick="location.href = 'https://www.paypal.com/webapps/shoppingcart?mfid=1701144177446_f8528387ee361&flowlogging_id=f8528387ee361#/checkout/shoppingCart'">
                                             <p>New Licesnse<br>$3,399</p>
                                         </div>
                                     </div>
@@ -273,12 +273,12 @@ $pageId = "b01";
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-6 col-md-12">
-                                        <div class="block-outline">
+                                        <div class="block-outline" onclick="location.href = 'https://www.paypal.com/webapps/shoppingcart?mfid=1701144216985_f704299f60ab9&flowlogging_id=f704299f60ab9#/checkout/shoppingCart'">
                                             <p>Upgrade<br>$1,499</p>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-12">
-                                        <div class="block-fill">
+                                        <div class="block-fill" onclick="location.href = 'https://www.paypal.com/webapps/shoppingcart?mfid=1701144415737_f133043a12173&flowlogging_id=f133043a12173#/checkout/shoppingCart'">
                                             <p>New Licesnse<br>$2,399</p>
                                         </div>
                                     </div>
@@ -307,12 +307,12 @@ $pageId = "b01";
                             <div class="row">
                                 <div class="col-lg-6 col-md-12">
                                     <div class="block-outline">
-                                        <p>Upgrade<br>$1,499</p>
+                                        <p>Upgrade<br>$3,699</p>
                                         <div class="offer-price">save $299</div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-12">
-                                    <div class="block-fill">
+                                    <div class="block-fill" onclick="location.href = 'https://www.paypal.com/webapps/shoppingcart?mfid=1701144444989_f546161cfdc32&flowlogging_id=f546161cfdc32#/checkout/shoppingCart'">
                                         <p>New Licesnse<br>$2,399</p>
                                         <div class="offer-price">save $299</div>
                                     </div>
@@ -329,13 +329,13 @@ $pageId = "b01";
                         <div class="row">
                             <div class="row">
                                 <div class="col-lg-6 col-md-12">
-                                    <div class="block-outline">
+                                    <div class="block-outline" onclick="location.href = 'https://www.paypal.com/webapps/shoppingcart?mfid=1701144464949_f179250c16283&flowlogging_id=f179250c16283#/checkout/shoppingCart'">
                                         <p>Upgrade<br>$2,699</p>
                                         <div class="offer-price">save $299</div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-12">
-                                    <div class="block-fill">
+                                    <div class="block-fill" onclick="location.href = 'https://www.paypal.com/webapps/shoppingcart?mfid=1701144484599_f29996706faa3&flowlogging_id=f29996706faa3#/checkout/shoppingCart'">
                                         <p>New Licesnse<br>$4,499</p>
                                         <div class="offer-price">save $299</div>
                                     </div>
@@ -368,7 +368,7 @@ $pageId = "b01";
 
     <?php require_once(dirname(dirname(__FILE__)) . '/footer-responsive.php'); ?>
 
-    <script src="core_js/aos.js"></script>
+    <script src="../core_js/aos.js"></script>
     <script type="text/javascript">
         var js = jQuery.noConflict();
 

@@ -20,13 +20,13 @@
     <link rel="apple-touch-icon" href="//www.atiz.com/imagess/index/apple-touch-icon.png" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@5.4.0/keen-slider.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/keen-slider@5.4.0/keen-slider.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
 
-    <link href="core_css/aos.css" rel="stylesheet">
-    <link href="core_css/slide.min.css" rel="stylesheet">
-    <link href="core_css/home-new.css" rel="stylesheet">
-    <link href="core_css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="core_css/global-new.css" rel="stylesheet">
+    <link href="../core_css/aos.css" rel="stylesheet">
+    <link href="../core_css/slide.min.css" rel="stylesheet">
+    <link href="../core_css/home-new.css" rel="stylesheet">
+    <link href="../core_css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../core_css/global-new.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap" rel="stylesheet">
@@ -204,7 +204,7 @@
                     <div class="swiper-slide">
                         <div class="download-img-block">
                             <img src="images/001_L.png" alt="">
-                            <div class="download-btn">
+                            <div class="download-btn" onclick="location.href = 'https://drive.google.com/file/d/1Bff8yXZJAoK-Q4doN_arOdObZVgOLM3r/view?usp=drive_link'">
                                 <img src="images/download.svg" alt="">
                             </div>
                         </div>
@@ -212,7 +212,7 @@
                     <div class="swiper-slide">
                         <div class="download-img-block">
                             <img src="images/002_R.png" alt="">
-                            <div class="download-btn">
+                            <div class="download-btn" onclick="location.href = 'https://drive.google.com/file/d/1PvT7-eYAwkQRDuEnlO7iNW_igU6o3acW/view?usp=drive_link'">
                                 <img src="images/download.svg" alt="">
                             </div>
                         </div>
@@ -220,7 +220,7 @@
                     <div class="swiper-slide">
                         <div class="download-img-block">
                             <img src="images/003_L.png" alt="">
-                            <div class="download-btn">
+                            <div class="download-btn" onclick="location.href = 'https://drive.google.com/file/d/1CTvzbDwtfHliQlm2DOeRAqchWYNA_2b2/view?usp=drive_link'">
                                 <img src="images/download.svg" alt="">
                             </div>
                         </div>
@@ -228,7 +228,7 @@
                     <div class="swiper-slide">
                         <div class="download-img-block">
                             <img src="images/006_.png" alt="">
-                            <div class="download-btn">
+                            <div class="download-btn" onclick="location.href = 'https://drive.google.com/file/d/1RNnb6Z3m-oaSefEKsG1sKmAZFehJJ9NJ/view?usp=drive_link'">
                                 <img src="images/download.svg" alt="">
                             </div>
                         </div>
@@ -236,7 +236,7 @@
                     <div class="swiper-slide">
                         <div class="download-img-block">
                             <img src="images/006_R.png" alt="">
-                            <div class="download-btn">
+                            <div class="download-btn" onclick="location.href = 'https://drive.google.com/file/d/1NAXpW44mulPPIbyVaK1sHThQYDLldneT/view?usp=drive_link'">
                                 <img src="images/download.svg" alt="">
                             </div>
                         </div>
@@ -366,7 +366,7 @@
     <!-- End content -->
 
     <?php require_once(dirname(dirname(__FILE__)) . '/footer-responsive.php'); ?>
-    <script src="core_js/aos.js"></script>
+    <script src="../core_js/aos.js"></script>
 
     <script>
         AOS.init({
