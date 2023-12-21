@@ -3,6 +3,7 @@
 
 <head>
     <title>Atiz | Book Scanners, Digitization & Scanning Solutions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Best book scanners and scanning solutions for mass digitization, digital archiving and preservation of cultural documents for libraries, archives and museums.">
     <meta name="Keywords" content="book scanner,book scanners,book scan,book scanning,bookscan,scanner software,scanner,scanners,scanning,document scanner,library book scanner,digitization" />
     <meta name="author" content="Atiz">
@@ -55,6 +56,17 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row hidden-ds">
+                <div class="col-lg-6 col-md-12">
+                    <div class="introduction">
+                        <div class="headline hidden-ds"></div>
+                        <p style="font-weight: 500;font-size:22px;color:rgba(0, 0, 0, 0.6)">Need to digitize and preserve your precious books?</p>
+                        <h1 class="title"><span>Atiz BookDrive</span> is the <br> #1 choice for libraries worldwide</h1>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -74,7 +86,7 @@
                                     <div>
                                         <div class="book-drive-content-topic">
                                             <p>BookDriveMark 2</p>
-                                            <p>new</p>
+                                            <p>New</p>
                                         </div>
                                         <p class="book-drive-content-desc">Top of the line, A2</p>
                                         <p class="book-drive-content-content">Mark 2, a successor to the BookDrive Pro, our best selling scanner.Mark 2 has improved upon BookDrive Pro in so important ways based on actual feedback of the prousers that make you want to upgrade.</p>
@@ -246,7 +258,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
+                            <div class="swiper-slide swiper-slide-index">
                                 <div class="trust-block trust-block-w">
                                     <img src="images/trust-1.png" alt="">
                                 </div>
@@ -254,7 +266,7 @@
                                     <img src="images/trust-2.png" alt="">
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide swiper-slide-index">
                                 <div class="trust-block trust-block-g">
                                     <img src="images/trust-3.png" alt="">
                                 </div>
@@ -262,7 +274,7 @@
                                     <img src="images/trust-4.png" alt="">
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide swiper-slide-index">
                                 <div class="trust-block trust-block-w">
                                     <img src="images/trust-5.png" alt="">
                                 </div>
@@ -270,7 +282,7 @@
                                     <img src="images/trust-6.png" alt="">
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide swiper-slide-index">
                                 <div class="trust-block trust-block-g">
                                     <img src="images/trust-7.png" alt="">
                                 </div>
@@ -280,7 +292,7 @@
                             </div>
                         </div>
                         <!-- Add Pagination -->
-                        <div class="swiper-pagination"></div>
+                        <div class="swiper-scrollbar"></div>
                         <!-- Add Arrows -->
                         <!-- <div class="swiper-button-next"></div> -->
                         <!-- <div class="swiper-button-prev"></div> -->
@@ -333,7 +345,7 @@
                 <div class="col-lg-4 col-md-6 software-block" onclick="location.href = 'https://www.atiz.com/bookdrive-capture/'">
                     <img src="images/software-1.png" alt="">
                     <div class="software-topic">
-                        <p>BookDrive Capture</p>
+                        <p style="margin: 0;">BookDrive Capture</p>
                         <img src="images/icon-software-1.png" alt="">
                     </div>
                     <p>The one software to control all the cameras Press one button to scan both left and right pages and have the images rendered on screen immediately. You can capture as fast as 800 pages per hour.</p>
@@ -341,14 +353,15 @@
                 <div class="col-lg-4 col-md-6 software-block" onclick="location.href = 'https://www.atiz.com/capture-sony/'">
                     <img src="images/software-2.png" alt="">
                     <div class="software-topic">
-                        <p>Atiz Capture for Sony</p>
+                        <p style="margin: 0;">Atiz Capture for Sony</p>
+                        <img src="images/icon-software-3.png" alt="">
                     </div>
-                    <p style="margin-top: 10px;">New software from Atiz enabling you to unlock the full power of Sony Alpha cameras like A7R IV for digitization on the BookDrive that you already own.</p>
+                    <p style="margin-top: 18px;">New software from Atiz enabling you to unlock the full power of Sony Alpha cameras like A7R IV for digitization on the BookDrive that you already own.</p>
                 </div>
                 <div class="col-lg-4 col-md-6 software-block" onclick="location.href = 'https://www.atiz.com/bookdrive-editor-pro/'">
                     <img src="images/software-3.png" alt="">
                     <div class="software-topic">
-                        <p>BookDrive Editor Pro 10</p>
+                        <p style="margin: 0;">BookDrive Editor Pro 10</p>
                         <img src="images/icon-software-2.png" alt="">
                     </div>
                     <p>Finish job faster. Frustration gone. Get output the way you want in one process. With the redesigned interface to make everything better. Could possibly save you over a hundred clicks per book.</p>
@@ -419,36 +432,40 @@
             // mousewheel: {
             //     invert: true,
             // },
+            scrollbar: {
+                el: ".swiper-scrollbar",
+                hide: true,
+            },
             slidesPerView: 4,
             spaceBetween: 0,
             autoHeight: true,
             breakpoints: {
                 320: {
-                    slidesPerView: 1,
+                    slidesPerView: 2,
                     spaceBetween: 0,
                 },
                 360: {
-                    slidesPerView: 1,
+                    slidesPerView: 2,
                     spaceBetween: 0,
                 },
                 375: {
-                    slidesPerView: 1,
+                    slidesPerView: 2,
                     spaceBetween: 0,
                 },
                 390: {
-                    slidesPerView: 1,
+                    slidesPerView: 2,
                     spaceBetween: 0,
                 },
                 428: {
-                    slidesPerView: 1,
+                    slidesPerView: 2,
                     spaceBetween: 0,
                 },
                 480: {
-                    slidesPerView: 1,
+                    slidesPerView: 2,
                     spaceBetween: 0,
                 },
                 640: {
-                    slidesPerView: 1,
+                    slidesPerView: 2,
                     spaceBetween: 0,
                 },
                 768: {

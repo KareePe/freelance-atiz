@@ -176,7 +176,7 @@ $actual_link_f = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 				<ul>
 					<li>
 						<a href="https://www.youtube.com/user/atizinnovation" title="Atiz Innovation YouTube Channel" target="_blank">
-							<img src="images/facebook.svg" alt="Atiz Innovation YouTube Channel">
+							<img src="images/facebook-svg.png" alt="Atiz Innovation YouTube Channel">
 						</a>
 					</li>
 					<li><a href="https://www.facebook.com/atiz.innovation" title="Atiz Innovation Facebook Page" target="_blank">

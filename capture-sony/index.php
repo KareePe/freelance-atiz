@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="Keywords" content="" />
     <meta name="author" content="Atiz">
@@ -279,35 +280,81 @@
                     <img src="images/complete.png" style="width: 100%;" alt="">
                 </div>
                 <div class="col-lg-6 col-md-12">
-                    <div class="accordition-block">
-                        <button class="accordion active">Dual camera control</button>
-                        <div class="panel" style="max-height: initial;">
-                            <img src="images/complete.png" style="width: 100%;margin:15px 0;" class="hidden-ds" alt="">
-                            <ul>
-                                <li>In-software camera status and settings</li>
-                                <li>Live View</li>
-                                <li>Support Sony cameras</li>
-                                <li>Support RAW</li>
-                                <li>Capture single side (left or right)</li>
-                                <li>Capture double sides (both left and right)</li>
-                            </ul>
-
+                    <div class="accordion" id="accordionExample1">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                                    Dual camera control
+                                </button>
+                            </h2>
+                            <div id="collapseOne1" class="accordion-collapse collapse show" aria-labelledby="headingOne1" data-bs-parent="#accordionExample1">
+                                <div class="accordion-body">
+                                    <img src="images/complete.png" style="width: 100%;margin:15px 0;" class="hidden-ds" alt="">
+                                    <ul>
+                                        <li>In-software camera status and settings</li>
+                                        <li>Live View</li>
+                                        <li>Support Sony cameras</li>
+                                        <li>Support RAW</li>
+                                        <li>Capture single side (left or right)</li>
+                                        <li>Capture double sides (both left and right)</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
 
-                        <button class="accordion">Fast Capture & Instant Edit</button>
-                        <div class="panel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                                    Fast Capture & Instant Edit
+                                </button>
+                            </h2>
+                            <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2" data-bs-parent="#accordionExample1">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Time lapse</li>
+                                        <li>Auto Capture Switch</li>
+                                        <li>Easily insert, replace or delete images anywhere</li>
+                                        <li>Option to batch re-index filename</li>
+                                        <li>Instant rotate, crop, resize, DPI adjustment</li>
+                                        <li>Instant export to TIFF, PDF, or PDF/A</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
 
-                        <button class="accordion">Manage</button>
-                        <div class="panel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo3" aria-expanded="false" aria-controls="collapseTwo3">
+                                    Manage
+                                </button>
+                            </h2>
+                            <div id="collapseTwo3" class="accordion-collapse collapse" aria-labelledby="headingTwo3" data-bs-parent="#accordionExample1">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Multi-language support</li>
+                                        <li>Metadata and tags</li>
+                                        <li>Option to retain EXIF information</li>
+                                        <li>Ability to resume recent books</li>
+                                        <li>Support Western and East Asian page sequence</li>
+                                        <li>Smart preview</li>
+                                        <li>Magnifying area</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
 
-                        <button class="accordion">Dual camera control</button>
-                        <div class="panel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
+                        <!-- <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo4" aria-expanded="false" aria-controls="collapseTwo4">
+                                    Dual camera control
+                                </button>
+                            </h2>
+                            <div id="collapseTwo4" class="accordion-collapse collapse" aria-labelledby="headingTwo4" data-bs-parent="#accordionExample1">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -366,6 +413,7 @@
     <!-- End content -->
 
     <?php require_once(dirname(dirname(__FILE__)) . '/footer-responsive.php'); ?>
+    <script src="../core_js/bootstrap5-js.js"></script>
     <script src="../core_js/aos.js"></script>
 
     <script>
@@ -377,8 +425,8 @@
             // mousewheel: {
             //     invert: true,
             // },
-            slidesPerView: 4,
-            centeredSlides: true,
+            slidesPerView: 5,
+            centeredSlides: false,
             spaceBetween: 0,
             autoHeight: true,
             breakpoints: {
@@ -428,7 +476,7 @@
                     centeredSlides: false,
                 },
                 1024: {
-                    slidesPerView: 4,
+                    slidesPerView: 5,
                     spaceBetween: 0,
                 }
             },

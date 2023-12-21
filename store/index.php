@@ -11,9 +11,11 @@ $pageId = "b01";
     <?php
     // require_once(dirname(dirname(__FILE__)).'/header-global.php');
     ?>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Identifier-URL" content="http://www.atiz.com" />
     <meta name="author" content="">
     <title>Atiz - Software Store</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
     <link href="//www.atiz.com/atiz1.ico" rel="shortcut icon" />
     <link href="../css/aos.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -77,7 +79,7 @@ $pageId = "b01";
                             <!-- <div class="swiper-button-prev"></div> -->
                         </div>
 
-                        <div class="swiper-pagination"></div>
+                        <div class="swiper-pagination hidden-ds"></div>
                     </div>
                 </div>
                 <div class="col-lg-12">
@@ -108,38 +110,86 @@ $pageId = "b01";
                                 <img src="images/book-b-mb.png" class="hidden-ds" alt="">
                             </div>
                             <div class="col-lg-6 col-md-12">
-                                <div class="accordition-block">
-                                    <button class="accordion active" style="font-weight: bold;">Why Upgrade to Version 10?</button>
-                                    <div class="panel" style="max-height: initial;">
-                                        <div class="list-content" style="margin-top: 35px;">
-                                            <img src="images/check-red.svg" alt="">
-                                            <p>Fully supports Windows 11, Windows 10</p>
-                                        </div>
-                                        <div class="list-content">
-                                            <img src="images/check-red.svg" alt="">
-                                            <p>Supports new, amazing Canon cameras such as EOS R5 (mirrorless), EOS RP, 5DS for ultra high-resolution and future proofing</p>
-                                        </div>
-                                        <div class="list-content">
-                                            <img src="images/check-red.svg" alt="">
-                                            <p>Most secure, stable and feature-packed yet.</p>
+                                <div class="accordion" id="accordionExample1">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne1">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                                                Why Upgrade to Version 10?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne1" class="accordion-collapse collapse show" aria-labelledby="headingOne1" data-bs-parent="#accordionExample1">
+                                            <div class="accordion-body">
+                                                <div class="list-content" style="margin-top: 35px;">
+                                                    <img src="images/check-red-svg.png" alt="">
+                                                    <p>Fully supports Windows 10, Windows 11</p>
+                                                </div>
+                                                <div class="list-content">
+                                                    <img src="images/check-red-svg.png" alt="">
+                                                    <p>Supports new, amazing Canon cameras such as EOS R5 (mirrorless), EOS RP, 5DS for ultra high-resolution and future proofing</p>
+                                                </div>
+                                                <div class="list-content">
+                                                    <img src="images/check-red-svg.png" alt="">
+                                                    <p>Supports models such as 850D, 90D, 1500D and a lot more!.</p>
+                                                </div>
+                                                <div class="list-content">
+                                                    <img src="images/check-red-svg.png" alt="">
+                                                    <p>Most secure, stable and feature-packed yet.</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
 
-                                    <button class="accordion" style="font-weight: bold;">Key Features</button>
-                                    <div class="panel">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo1">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">
+                                                Key Features
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo1" class="accordion-collapse collapse" aria-labelledby="headingTwo1" data-bs-parent="#accordionExample1">
+                                            <div class="accordion-body">
+                                                <div class="list-content" style="margin-top: 35px;">
+                                                    <img src="images/check-red-svg.png" alt="">
+                                                    <p>Connect and controls dual Canon EOS cameras</p>
+                                                </div>
+                                                <div class="list-content">
+                                                    <img src="images/check-red-svg.png" alt="">
+                                                    <p>live view, live preview</p>
+                                                </div>
+                                                <div class="list-content">
+                                                    <img src="images/check-red-svg.png" alt="">
+                                                    <p>Inset, replace</p>
+                                                </div>
+                                                <div class="list-content">
+                                                    <img src="images/check-red-svg.png" alt="">
+                                                    <p>Crop, Resize, Deskew</p>
+                                                </div>
+                                                <div class="list-content">
+                                                    <img src="images/check-red-svg.png" alt="">
+                                                    <p>Crop, Export and combine to PDF</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+
                                 <div class="row">
                                     <div class="col-lg-6 col-md-12">
-                                        <div class="block-outline"  onclick="location.href = 'https://www.paypal.com/webapps/shoppingcart?mfid=1701144061717_f8573671df95e&flowlogging_id=f8573671df95e#/checkout/shoppingCart'">
-                                            <p>Upgrade<br>$1,499</p>
-                                        </div>
+                                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" id="form-upgrade-editor">
+                                            <button type="submit" class="block-outline" style="background-color: transparent;">
+                                                <p>Upgrade<br>$1,499</p>
+                                            </button>
+                                            <input type="hidden" name="cmd" value="_s-xclick">
+                                            <input type="hidden" name="hosted_button_id" value="QYLHZJ82NVJSC">
+                                        </form>
                                     </div>
                                     <div class="col-lg-6 col-md-12">
-                                        <div class="block-fill"  onclick="location.href = 'https://www.paypal.com/webapps/shoppingcart?mfid=1701144084668_f226710b6b739&flowlogging_id=f226710b6b739#/checkout/shoppingCart'">
-                                            <p>New Licesnse<br>$2,399</p>
-                                        </div>
+                                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" id="form-new-license-editor">
+                                            <button type="submit" class="block-fill" style="border: none;">
+                                                <p>New Licesnse<br>$2,399</p>
+                                            </button>
+                                            <input type="hidden" name="cmd" value="_s-xclick">
+                                            <input type="hidden" name="hosted_button_id" value="NGZ9R24Q8L9P2">
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -170,49 +220,61 @@ $pageId = "b01";
                                 <img src="images/book-b-2-mb.png" class="hidden-ds" alt="">
                             </div>
                             <div class="col-lg-6 col-md-12">
-                                <div class="accordition-block">
-                                    <button class="accordion active" style="font-weight: bold;">Key Features</button>
-                                    <div class="panel" style="max-height: initial;">
-                                        <div class="list-content" style="margin-top: 35px;">
-                                            <img src="images/check-red.svg" alt="">
-                                            <p>Fully supports Windows 11, Windows 10</p>
-                                        </div>
-                                        <div class="list-content">
-                                            <img src="images/check-red.svg" alt="">
-                                            <p>Connects and controls dual Sony Alpha Mirrorless cameras at the same time</p>
-                                        </div>
-                                        <div class="list-content">
-                                            <img src="images/check-red.svg" alt="">
-                                            <p>Fast speed and stable control</p>
-                                        </div>
-                                        <div class="list-content">
-                                            <img src="images/check-red.svg" alt="">
-                                            <p>You can configure and change settings such as Aperture, Shutter Speed, ISO easily right within the software</p>
-                                        </div>
-                                        <div class="list-content">
-                                            <img src="images/check-red.svg" alt="">
-                                            <p>live view, live preview</p>
-                                        </div>
-                                        <div class="list-content">
-                                            <img src="images/check-red.svg" alt="">
-                                            <p>Inset, replace</p>
-                                        </div>
-                                        <div class="list-content">
-                                            <img src="images/check-red.svg" alt="">
-                                            <p>Crop, Export and combine to PDF</p>
+                                <div class="accordion" id="accordionExample2">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne2">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+                                                Key Features
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne2" class="accordion-collapse collapse show" aria-labelledby="headingOne2" data-bs-parent="#accordionExample2">
+                                            <div class="accordion-body">
+                                                <div class="list-content" style="margin-top: 35px;">
+                                                    <img src="images/check-red-svg.png" alt="">
+                                                    <p>Fully supports Windows 11, Windows 10</p>
+                                                </div>
+                                                <div class="list-content">
+                                                    <img src="images/check-red-svg.png" alt="">
+                                                    <p>Connects and controls dual Sony Alpha Mirrorless cameras at the same time</p>
+                                                </div>
+                                                <div class="list-content">
+                                                    <img src="images/check-red-svg.png" alt="">
+                                                    <p>Fast speed and stable control</p>
+                                                </div>
+                                                <div class="list-content">
+                                                    <img src="images/check-red-svg.png" alt="">
+                                                    <p>You can configure and change settings such as Aperture, Shutter Speed, ISO easily right within the software</p>
+                                                </div>
+                                                <div class="list-content">
+                                                    <img src="images/check-red-svg.png" alt="">
+                                                    <p>live view, live preview</p>
+                                                </div>
+                                                <div class="list-content">
+                                                    <img src="images/check-red-svg.png" alt="">
+                                                    <p>Inset, replace</p>
+                                                </div>
+                                                <div class="list-content">
+                                                    <img src="images/check-red-svg.png" alt="">
+                                                    <p>Crop, Export and combine to PDF</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-12">
+                                    <!-- <div class="col-lg-6 col-md-12">
                                         <div class="block-outline">
                                             <p>Upgrade<br>$2,499</p>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="col-lg-6 col-md-12">
-                                        <div class="block-fill" onclick="location.href = 'https://www.paypal.com/webapps/shoppingcart?mfid=1701144177446_f8528387ee361&flowlogging_id=f8528387ee361#/checkout/shoppingCart'">
-                                            <p>New Licesnse<br>$3,399</p>
-                                        </div>
+                                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" id="form-upgrade-capture">
+                                            <button type="submit" class="block-fill" style="border: none;">
+                                                <p>New Licesnse<br>$3,399</p>
+                                            </button>
+                                            <input type="hidden" name="cmd" value="_s-xclick">
+                                            <input type="hidden" name="hosted_button_id" value="5229EX39ANF6Q">
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -245,42 +307,90 @@ $pageId = "b01";
                                 <img src="images/book-b-3.png" alt="">
                             </div>
                             <div class="col-lg-6 col-md-12">
-                                <div class="accordition-block">
-                                    <button class="accordion active" style="font-weight: bold;">Why Upgrade to Version 10?</button>
-                                    <div class="panel" style="max-height: initial;">
-                                        <div class="list-content" style="margin-top: 35px;">
-                                            <img src="images/check-red.svg" alt="">
-                                            <p>Fully supports Windows 11, Windows 10</p>
-                                        </div>
-                                        <div class="list-content">
-                                            <img src="images/check-red.svg" alt="">
-                                            <p>Up to 60 times faster load time than previous version! Will save you tremendous amount of work. You will finish projects much faster then before.</p>
-                                        </div>
-                                        <div class="list-content">
-                                            <img src="images/check-red.svg" alt="">
-                                            <p>Also works with RAW format from Sonys, Canons, Nikons (i.e. .ARW .CR3 .NEF files)</p>
-                                        </div>
-                                        <div class="list-content">
-                                            <img src="images/check-red.svg" alt="">
-                                            <p>New, improved Export Tool with more granular options for file size optimnization.</p>
+                                <div class="accordion" id="accordionExample3">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree1">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree1" aria-expanded="true" aria-controls="collapseThree1">
+                                                Why Upgrade to Version 10?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree1" class="accordion-collapse collapse show" aria-labelledby="headingOne1" data-bs-parent="#accordionExample1">
+                                            <div class="accordion-body">
+                                                <div class="list-content" style="margin-top: 35px;">
+                                                    <img src="images/check-red-svg.png" alt="">
+                                                    <p>Fully supports Windows 10, Windows 11</p>
+                                                </div>
+                                                <div class="list-content">
+                                                    <img src="images/check-red-svg.png" alt="">
+                                                    <p>Up to 60 times faster load time than previous version! Will save you tremendous amount of work. You will finish projects much faster then before.</p>
+                                                </div>
+                                                <div class="list-content">
+                                                    <img src="images/check-red-svg.png" alt="">
+                                                    <p>Designed specifically to supports ultra-highres, super-large file sizes from cameras sush as Sony A7R4.</p>
+                                                </div>
+                                                <div class="list-content">
+                                                    <img src="images/check-red-svg.png" alt="">
+                                                    <p>Also works with RAW format from Sonys, Canons, Nikons
+                                                        (i.e. .ARW .CR3 .NEF files)</p>
+                                                </div>
+                                                <div class="list-content">
+                                                    <img src="images/check-red-svg.png" alt="">
+                                                    <p>New, improved Export Tool with more granular options for file size optimnization.</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
 
-                                    <button class="accordion" style="font-weight: bold;">Key Features</button>
-                                    <div class="panel">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree2">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+                                                Key Features
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree2" class="accordion-collapse collapse" aria-labelledby="headingTwo1" data-bs-parent="#accordionExample1">
+                                            <div class="accordion-body">
+                                                <div class="list-content" style="margin-top: 35px;">
+                                                    <img src="images/check-red-svg.png" alt="">
+                                                    <p>Edit image color and illuminator</p>
+                                                </div>
+                                                <div class="list-content">
+                                                    <img src="images/check-red-svg.png" alt="">
+                                                    <p>Sharpen, Contrast</p>
+                                                </div>
+                                                <div class="list-content">
+                                                    <img src="images/check-red-svg.png" alt="">
+                                                    <p>Despeckel, Remove black border, Remove background</p>
+                                                </div>
+                                                <div class="list-content">
+                                                    <img src="images/check-red-svg.png" alt="">
+                                                    <p>Crop, Resize, Deskew</p>
+                                                </div>
+                                                <div class="list-content">
+                                                    <img src="images/check-red-svg.png" alt="">
+                                                    <p>Multibook, Multichapter</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-6 col-md-12">
-                                        <div class="block-outline" onclick="location.href = 'https://www.paypal.com/webapps/shoppingcart?mfid=1701144216985_f704299f60ab9&flowlogging_id=f704299f60ab9#/checkout/shoppingCart'">
-                                            <p>Upgrade<br>$1,499</p>
-                                        </div>
+                                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" id="form-upgrade-editor">
+                                            <button type="submit" class="block-outline" style="background-color: transparent;">
+                                                <p>Upgrade<br>$1,499</p>
+                                            </button>
+                                            <input type="hidden" name="cmd" value="_s-xclick">
+                                            <input type="hidden" name="hosted_button_id" value="ZD3ZSYBS2KHPU">
+                                        </form>
                                     </div>
                                     <div class="col-lg-6 col-md-12">
-                                        <div class="block-fill" onclick="location.href = 'https://www.paypal.com/webapps/shoppingcart?mfid=1701144415737_f133043a12173&flowlogging_id=f133043a12173#/checkout/shoppingCart'">
-                                            <p>New Licesnse<br>$2,399</p>
-                                        </div>
+                                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" id="form-new-license-editor">
+                                            <button type="submit" class="block-fill" style="border: none;">
+                                                <p>New Licesnse<br>$2,399</p>
+                                            </button>
+                                            <input type="hidden" name="cmd" value="_s-xclick">
+                                            <input type="hidden" name="hosted_button_id" value="VTDCAGRVCC494">
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -305,17 +415,21 @@ $pageId = "b01";
                         <img src="images/offer-1.png" alt="">
                         <div class="row">
                             <div class="row">
-                                <div class="col-lg-6 col-md-12">
+                                <!-- <div class="col-lg-6 col-md-12">
                                     <div class="block-outline">
                                         <p>Upgrade<br>$3,699</p>
                                         <div class="offer-price">save $299</div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="col-lg-6 col-md-12">
-                                    <div class="block-fill" onclick="location.href = 'https://www.paypal.com/webapps/shoppingcart?mfid=1701144444989_f546161cfdc32&flowlogging_id=f546161cfdc32#/checkout/shoppingCart'">
-                                        <p>New Licesnse<br>$2,399</p>
-                                        <div class="offer-price">save $299</div>
-                                    </div>
+                                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" id="form-upgrade-capture">
+                                        <button type="submit" class="block-fill" style="border: none;">
+                                            <p>New Licesnse<br>$5,499</p>
+                                            <div class="offer-price">save $299</div>
+                                        </button>
+                                        <input type="hidden" name="cmd" value="_s-xclick">
+                                        <input type="hidden" name="hosted_button_id" value="4SH7X3TQJFFSL">
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -329,16 +443,24 @@ $pageId = "b01";
                         <div class="row">
                             <div class="row">
                                 <div class="col-lg-6 col-md-12">
-                                    <div class="block-outline" onclick="location.href = 'https://www.paypal.com/webapps/shoppingcart?mfid=1701144464949_f179250c16283&flowlogging_id=f179250c16283#/checkout/shoppingCart'">
-                                        <p>Upgrade<br>$2,699</p>
-                                        <div class="offer-price">save $299</div>
-                                    </div>
+                                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" id="form-upgrade-editor">
+                                        <button type="submit" class="block-outline" style="background-color: transparent;">
+                                            <p>Upgrade<br>$2,699</p>
+                                            <div class="offer-price">save $299</div>
+                                        </button>
+                                        <input type="hidden" name="cmd" value="_s-xclick">
+                                        <input type="hidden" name="hosted_button_id" value="PL98FFD2KLVS6">
+                                    </form>
                                 </div>
                                 <div class="col-lg-6 col-md-12">
-                                    <div class="block-fill" onclick="location.href = 'https://www.paypal.com/webapps/shoppingcart?mfid=1701144484599_f29996706faa3&flowlogging_id=f29996706faa3#/checkout/shoppingCart'">
-                                        <p>New Licesnse<br>$4,499</p>
-                                        <div class="offer-price">save $299</div>
-                                    </div>
+                                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" id="form-new-license-editor">
+                                        <button type="submit" class="block-fill" style="border: none;">
+                                            <p>New Licesnse<br>$4,499</p>
+                                            <div class="offer-price">save $299</div>
+                                        </button>
+                                        <input type="hidden" name="cmd" value="_s-xclick">
+                                        <input type="hidden" name="hosted_button_id" value="RPPGAHTMP792N">
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -367,7 +489,7 @@ $pageId = "b01";
     </section>
 
     <?php require_once(dirname(dirname(__FILE__)) . '/footer-responsive.php'); ?>
-
+    <script src="../core_js/bootstrap5-js.js"></script>
     <script src="../core_js/aos.js"></script>
     <script type="text/javascript">
         var js = jQuery.noConflict();
